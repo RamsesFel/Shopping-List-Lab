@@ -1,31 +1,31 @@
-﻿Dictionary<string, double> storeItems = new Dictionary<string, double>();
+﻿Dictionary<string, decimal> storeItems = new Dictionary<string, decimal>();
 List<string> reciptname = new List<string>();
-List<double> reciptprice = new List<double>();
+List<decimal> reciptprice = new List<decimal>();
 List<string> orderedreciptname = new List<string>();
-List<double> orderedreciptprice = new List<double>();
-storeItems.Add("1. Soda", 1.00);
-storeItems.Add("2. Coffee", 1.50);
-storeItems.Add("3. Candy", 1.00);
-storeItems.Add("4. Chips", 1.50);
-storeItems.Add("5. Dougnut", 0.89);
-storeItems.Add("6. Muffin", 1.25);
-storeItems.Add("7. Gum", 1.00);
-storeItems.Add("8. Slushie", 1.50);
+List<decimal> orderedreciptprice = new List<decimal>();
+storeItems.Add("1. Soda", 1.00m);
+storeItems.Add("2. Coffee", 1.50m);
+storeItems.Add("3. Candy", 1.00m);
+storeItems.Add("4. Chips", 1.50m);
+storeItems.Add("5. Dougnut", 0.89m);
+storeItems.Add("6. Muffin", 1.25m);
+storeItems.Add("7. Gum", 1.00m);
+storeItems.Add("8. Slushie", 1.50m);
 bool shopping = true;
-double ordercost = 0;
+decimal ordercost = 0;
 bool validanswer = false;
 Console.WriteLine("Welcome! What would you like?\n");
 
 while (shopping)
 {
-    foreach (KeyValuePair<string, double> item in storeItems)
+    foreach (KeyValuePair<string, decimal> item in storeItems)
     {
         Console.WriteLine($"{item.Key,-20}${item.Value}");
     }
 
     string order = Console.ReadLine().ToLower();
     validanswer = false;
-    foreach (KeyValuePair<string, double> item in storeItems)
+    foreach (KeyValuePair<string, decimal> item in storeItems)
     {
         if (item.Key.ToLower().Contains(order))
         {
@@ -63,7 +63,7 @@ while (shopping)
 int reciptlength = reciptname.Count();
 for (int i = 0; i < reciptlength; i++)
 {
-    double mostExpensivePrice = 0;
+    decimal mostExpensivePrice = 0;
     string mostExpensiveName = "";
     for (int x = 0; x < reciptname.Count; x++)
     {

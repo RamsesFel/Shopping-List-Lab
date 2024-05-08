@@ -12,3 +12,4 @@ C:\Users\Ramses\source\repos\Grand Circus\Shopping List Lab\Shopping List Lab\ob
 C:\Users\Ramses\source\repos\Grand Circus\Shopping List Lab\Shopping List Lab\obj\Debug\net8.0\Shopping List Lab.pdb
 C:\Users\Ramses\source\repos\Grand Circus\Shopping List Lab\Shopping List Lab\obj\Debug\net8.0\Shopping List Lab.genruntimeconfig.cache
 C:\Users\Ramses\source\repos\Grand Circus\Shopping List Lab\Shopping List Lab\obj\Debug\net8.0\ref\Shopping List Lab.dll
+C:\Users\Ramses\source\repos\Grand Circus\Shopping List Lab\Shopping List Lab\obj\Debug\net8.0\Shopping List Lab.sourcelink.json
